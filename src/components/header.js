@@ -4,21 +4,44 @@ import "toastr/build/toastr.min.css";
 
 const Header = {
     render() {
-        return `
-        <div class="bg-orange-500 flex justify-between items-center">
-            <ul class="flex">
-            <li><a href="/" class="block px-4 py-5 hover:bg-indigo-500 hover:text-white">Home Page</a></li>
-            <li><a href="/#/about" class="block px-4 py-5 hover:bg-indigo-500 hover:text-white">About Page</a></li>
-            <li><a href="/#/products" class="block px-4 py-5 hover:bg-indigo-500 hover:text-white">Product Page</a></li>
-            <li><a href="/#/admin/dashboard" class="block px-4 py-5 hover:bg-indigo-500 hover:text-white">Dashboard Page</a></li>
-           
-            </ul>
-            ${localStorage.getItem("user") ? `<ul class="flex">
-            <li><a  id="account-email" class="block px-4 py-5 hover:bg-indigo-500 hover:text-white"></a></li>
-            <li><a  id="logout" class="block px-4 py-5 hover:bg-indigo-500 hover:text-white cursor-pointer">Logout</a></li>
-        </ul>` : ""}
-            
-        </div>
+        return /*html*/ `
+        <!-- header -->
+        <header>
+            <div class="logo">
+            <img src="./img/logo.png" alt="">
+            </div>
+    
+            <div class="menu">
+                <li><a href="index.html">TRANG CHỦ</a>
+                 <li><a href="category.html">NỮ</a></li>
+                 <li><a href="">NAM</a></li>
+                 <li><a href="">TRẺ EM</a></li>
+                 <li><a href="">BÀI VIẾT</a></li>
+            </div>
+    
+            <div class="orther">
+                 <li><input type="text" placeholder="Tìm kiếm"></li>
+                 <button class="btn">Search</button>
+                 <li><a class="fas fa-cart-arrow-down" href=""></a></li>
+                 <li><a class="fa fa-user" href="login.html"></a></li>
+                 <li><a class="fa fa-shopping-bag" href="cart.html"></a></li>
+            </div>
+        </header>
+    <!-- end header -->
+    <!-- banner -->
+        <section id="slider">
+            <div class="aspect-ratio-169">
+                <img src="./img/slide1.jpg" alt="">
+                <img src="./img/slide2.jpg" alt="">
+                <img src="./img/slide3.jpg" alt="">
+            </div>
+            <div class="dot-container">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </section><br><br>
+    <!-- end banner -->
         `;
     },
     afterRender() {
