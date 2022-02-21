@@ -12,7 +12,7 @@ const Header = {
             </div>
     
             <div class="menu">
-                <li><a href="index.html">TRANG CHỦ</a>
+                <li><a href="/">TRANG CHỦ</a>
                  <li><a href="category.html">NỮ</a></li>
                  <li><a href="">NAM</a></li>
                  <li><a href="">BÀI VIẾT</a></li>
@@ -21,9 +21,9 @@ const Header = {
             <div class="orther">
                  <li><input type="text" placeholder="Tìm kiếm"></li>
                  <button class="btn">Search</button>
-                 <li><a class="fas fa-cart-arrow-down" href=""></a></li>
-                 <li><a class="fa fa-user" href="login.html"></a></li>
-                 <li><a class="fa fa-shopping-bag" href="cart.html"></a></li>
+                 <li><a href="/signup">Đăng ký</a></li>
+                 <li><a href="/signin">Đăng nhập</a></li>
+                 <li><a class="fa fa-shopping-bag" href="/cart"></a></li>
             </div>
         </header>
     <!-- end header -->

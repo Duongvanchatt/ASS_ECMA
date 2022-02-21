@@ -1,22 +1,47 @@
-import { signup } from "../api/user";
+// import { signup } from "../api/user";
 
 const SignUp = {
     render() {
-        return `<form id="formSignup">
-                <input type="email" id="email" class="border border-black" placeholder="Your email"/>
-                <input type="password" id="password" class="border border-black" placeholder="Your password"/>
-                <button>Đăng ký</button>
-        </form>`;
+        return /*html*/`<!-- dangki -->
+        <section class="content row">
+            <div class="textdangki">
+                <h1>IVY</h1>
+                <p>MODA</p>
+            </div>
+            <div class="boxdangki">
+                <div class="boxdangki-tieude">
+                    <h1>ĐĂNG KÍ</h1>
+                </div>
+                <div class="boxdangki-input">
+                   <label for=""><i class='fas fa-user-alt'></i> Họ tên</label><br>
+                   <input type="text" placeholder="Nhập họ tên..."><br><br>
+   
+                    <label for=""><i class='far fa-address-card'></i> Email</label><br>
+                    <input type="text" placeholder="Nhập email..."><br><br>
+   
+                    <label for=""><i class='fas fa-key'></i> Mật khẩu</label><br>
+                    <input type="text" placeholder="Nhập mật khẩu..."><br><br>
+   
+                    <label for=""><i class='fas fa-key'></i> Xác nhận mật khẩu</label><br>
+                    <input type="text" placeholder="Nhập lại mật khẩu...">
+   
+                    <div class="btn2">
+                       <button class="btn-dangki">Đăng kí</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+   <!-- end dangki -->`;
     },
-    afterRender() {
-        const formSignup = document.querySelector("#formSignup");
-        formSignup.addEventListener("submit", (e) => {
-            e.preventDefault();
-            signup({
-                email: document.querySelector("#email").value,
-                password: document.querySelector("#password").value,
-            });
-        });
-    },
+    // afterRender() {
+    //     const formSignup = document.querySelector("#formSignup");
+    //     formSignup.addEventListener("submit", (e) => {
+    //         e.preventDefault();
+    //         signup({
+    //             email: document.querySelector("#email").value,
+    //             password: document.querySelector("#password").value,
+    //         });
+    //     });
+    // },
 };
 export default SignUp;

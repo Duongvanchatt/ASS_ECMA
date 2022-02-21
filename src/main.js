@@ -8,8 +8,9 @@ import Navigo from "navigo";
 // import DetailProduct from "./pages/products/detail";
 import HomePage from "./pages/home";
 import Detail from "./pages/products/detail";
-// import Signin from "./pages/signin";
-// import Signup from "./pages/signup";
+import Cart from "./pages/cart";
+import Signin from "./pages/signin";
+import Signup from "./pages/signup";
 // import ProductsPage from "./pages/products";
 
 const router = new Navigo("/", { linksSelector: "a", hash: true });
@@ -33,13 +34,14 @@ router.on("/admin/*", () => {}, {
 router.on({
     "/": () => print(HomePage),
     "/detail": () => print(Detail),
+    "/cart": () => print(Cart),
     // "/news/:id": ({ data }) => print(DetailPage, data.id),
     // "/admin/dashboard": () => print(Dashboard),
     // "/admin/news": () => print(AdminNewsPage),
     // "/admin/news/add": () => print(AdminAddPost),
     // "/admin/news/:id/edit": ({ data }) => print(AdminEditPost, data.id),
-    // "/signup": () => print(Signup),
-    // "/signin": () => print(Signin),
+    "/signup": () => print(Signup),
+    "/signin": () => print(Signin),
     // "/products": () => print(ProductsPage),
     // "/products/:id": ({ data }) => print(DetailProduct, data.id),
 });
