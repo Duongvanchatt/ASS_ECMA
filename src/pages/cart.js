@@ -36,18 +36,18 @@ const Cart = {
                           </tr>
 
                           <tr>
-                              <td><img src="image/sp1.jpg" alt=""></td>
+                              <td><img src="./img/sp1.jpg" alt=""></td>
                               <td><p>Đầm voan xếp ánh kim MS 41T0057</p></td>
-                              <td><img src="image/spcolor.png" alt=""></td>
+                              <td><img src="./img/spcolor.png" alt=""></td>
                               <td><p>L</p></td>
                               <td><input type="number" value="1" min="1"></td>
                               <td><p>190.000 <sup>đ</sup></p></td>
                               <td><span>X</span></td>
                         </tr>
                         <tr>
-                            <td><img src="image/sp2.jpg" alt=""></td>
+                            <td><img src="./img/sp2.jpg" alt=""></td>
                             <td><p>Đầm voan xếp ánh kim MS 41T0057</p></td>
-                            <td><img src="image/spcolor.png" alt=""></td>
+                            <td><img src="./img/spcolor.png" alt=""></td>
                             <td><p>L</p></td>
                             <td><input type="number" value="1" min="1"></td>
                             <td><p>190.000 <sup>đ</sup></p></td>
@@ -78,7 +78,6 @@ const Cart = {
                             <p style="color: red; font-weight: bold;">Mua thêm 110.000đ để được miễn phí SHIP</p>
                     </div>
                     <div class="cart-content-right-button">
-                        <button>TIẾP TỤC MUA SẮM</button>
                         <button>THANH TOÁN</button>
                     </div>
                     <div class="cart-content-right-dangnhap">
