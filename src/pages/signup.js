@@ -1,4 +1,4 @@
-// import { signup } from "../api/user";
+import { signup } from "../api/user";
 
 const SignUp = {
     render() {
@@ -12,36 +12,36 @@ const SignUp = {
                 <div class="boxdangki-tieude">
                     <h1>ĐĂNG KÍ</h1>
                 </div>
+                <form id="formSignup">
                 <div class="boxdangki-input">
                    <label for=""><i class='fas fa-user-alt'></i> Họ tên</label><br>
-                   <input type="text" placeholder="Nhập họ tên..."><br><br>
+                   <input type="text" id="username" placeholder="Nhập họ tên..."><br><br>
    
                     <label for=""><i class='far fa-address-card'></i> Email</label><br>
-                    <input type="text" placeholder="Nhập email..."><br><br>
+                    <input type="text" id="email" placeholder="Nhập email..."><br><br>
    
                     <label for=""><i class='fas fa-key'></i> Mật khẩu</label><br>
-                    <input type="text" placeholder="Nhập mật khẩu..."><br><br>
-   
-                    <label for=""><i class='fas fa-key'></i> Xác nhận mật khẩu</label><br>
-                    <input type="text" placeholder="Nhập lại mật khẩu...">
+                    <input type="text" id="password" placeholder="Nhập mật khẩu..."><br><br>
    
                     <div class="btn2">
                        <button class="btn-dangki">Đăng kí</button>
                     </div>
                 </div>
             </div>
+            </form>
         </section>
    <!-- end dangki -->`;
     },
-    // afterRender() {
-    //     const formSignup = document.querySelector("#formSignup");
-    //     formSignup.addEventListener("submit", (e) => {
-    //         e.preventDefault();
-    //         signup({
-    //             email: document.querySelector("#email").value,
-    //             password: document.querySelector("#password").value,
-    //         });
-    //     });
-    // },
+    afterRender() {
+        const formSignup = document.querySelector("#formSignup");
+        formSignup.addEventListener("submit", (e) => {
+            e.preventDefault();
+            signup({
+                username: document.querySelector("#username").value,
+                email: document.querySelector("#email").value,
+                password: document.querySelector("#password").value,
+            });
+        });
+    },
 };
 export default SignUp;

@@ -1,9 +1,9 @@
 import Navigo from "navigo";
-import AboutPage from "./pages/about";
+// import AboutPage from "./pages/about";
 import Dashboard from "./pages/admin/dashboard";
-import AdminNewsPage from "./pages/admin/posts";
-import AdminAddPost from "./pages/admin/posts/add";
-import AdminEditPost from "./pages/admin/posts/edit";
+// import AdminNewsPage from "./pages/admin/posts";
+// import AdminAddPost from "./pages/admin/posts/add";
+// import AdminEditPost from "./pages/admin/posts/edit";
 import DetailPage from "./pages/detail";
 import DetailProduct from "./pages/products/detail";
 import HomePage from "./pages/home";
