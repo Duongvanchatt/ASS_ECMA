@@ -7,6 +7,7 @@ import Navigo from "navigo";
 // import DetailPage from "./pages/detail";
 // import DetailProduct from "./pages/products/detail";
 import HomePage from "./pages/home";
+import Detail from "./pages/products/detail";
 // import Signin from "./pages/signin";
 // import Signup from "./pages/signup";
 // import ProductsPage from "./pages/products";
@@ -31,7 +32,7 @@ router.on("/admin/*", () => {}, {
 });
 router.on({
     "/": () => print(HomePage),
-    // "/about": () => print(AboutPage),
+    "/detail": () => print(Detail),
     // "/news/:id": ({ data }) => print(DetailPage, data.id),
     // "/admin/dashboard": () => print(Dashboard),
     // "/admin/news": () => print(AdminNewsPage),
