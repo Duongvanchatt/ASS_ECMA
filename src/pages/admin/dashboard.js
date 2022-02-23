@@ -1,8 +1,9 @@
-import Navadmin from "../../components/Navadmin";
+// import adminNav from "../../components/adminNav";
+import AdminNav from "../../components/Navadmin";
 const Dashboard = {
     render() {
         return /* html */`
-        ${Navadmin.render()}
+        ${AdminNav.render()}
         <div class="min-h-full">
         <header class="bg-white shadow">
             <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
